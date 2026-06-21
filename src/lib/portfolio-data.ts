@@ -110,8 +110,8 @@ export const skills = [
 
 export const certifications = [
   {
-    title: "View all certifications on LinkedIn",
-    issuer: "LinkedIn · Shishir Dixit",
-    url: "https://www.linkedin.com/in/shishirdixit23/details/certifications/",
+    title: "LinkedIn Certifications",
+    issuer: "Open Shishir Dixit's LinkedIn profile to view credentials",
+    url: "https://www.linkedin.com/in/shishirdixit23/",
   },
 ];

@@ -124,33 +124,33 @@ function Hero() {
           </div>
         </div>
 
-        <div className="card-pop p-6">
-          <p className="eyebrow text-muted-foreground">Currently</p>
-          <p className="mt-1 font-display text-xl font-bold">Product Engineer</p>
-          <p className="text-muted-foreground">@ TCS · Bengaluru</p>
-          <div className="my-5 h-px w-full bg-border" />
-          <p className="eyebrow text-muted-foreground">Focus stack</p>
-          <div className="mt-3 flex flex-wrap gap-2">
-            {["Ruby on Rails", "React.js", "RESTful APIs", "AI / RAG"].map((t) => (
-              <span
-                key={t}
-                className="rounded-full border-[1.5px] border-ink bg-secondary px-3 py-1 text-sm font-medium"
-              >
-                {t}
-              </span>
-            ))}
+        <div className="card-pop overflow-hidden p-3">
+          <div className="overflow-hidden rounded-2xl border-[1.5px] border-ink">
+            <img
+              src={profilePhoto.url}
+              alt="Shishir Dixit working at his desk"
+              className="aspect-[3/4] w-full object-cover"
+              loading="eager"
+            />
           </div>
-          <div className="my-5 h-px w-full bg-border" />
-          <div className="flex gap-3">
-            <SocialIcon href={profile.github} label="GitHub">
-              <Github className="h-5 w-5" />
-            </SocialIcon>
-            <SocialIcon href={profile.linkedin} label="LinkedIn">
-              <Linkedin className="h-5 w-5" />
-            </SocialIcon>
-            <SocialIcon href={`mailto:${profile.email}`} label="Email">
-              <Mail className="h-5 w-5" />
-            </SocialIcon>
+          <div className="flex items-center justify-between gap-3 px-2 pb-1 pt-3">
+            <div>
+              <p className="font-display text-lg font-bold leading-tight">
+                Product Engineer
+              </p>
+              <p className="text-sm text-muted-foreground">@ TCS · Bengaluru</p>
+            </div>
+            <div className="flex gap-2">
+              <SocialIcon href={profile.github} label="GitHub">
+                <Github className="h-5 w-5" />
+              </SocialIcon>
+              <SocialIcon href={profile.linkedin} label="LinkedIn">
+                <Linkedin className="h-5 w-5" />
+              </SocialIcon>
+              <SocialIcon href={`mailto:${profile.email}`} label="Email">
+                <Mail className="h-5 w-5" />
+              </SocialIcon>
+            </div>
           </div>
         </div>
       </div>

@@ -10,6 +10,7 @@ import {
   ExternalLink,
 } from "lucide-react";
 import resume from "@/assets/resume.asset.json";
+import profilePhoto from "@/assets/profile.asset.json";
 import {
   profile,
   projects,

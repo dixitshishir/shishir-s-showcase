@@ -46,7 +46,7 @@ export const projects: Project[] = [
       "Responsive React SPA giving a legacy printing business a modern online presence with reusable components.",
     tags: ["React.js", "Vite", "Tailwind CSS"],
     github: "https://github.com/dixitshishir/heritage-print-digital",
-    live: "https://dixit-offser-printers.vercel.app",
+    live: "https://dixit-offset-printers.vercel.app",
   },
   {
     title: "Food Review · Zero-Shot Learning",

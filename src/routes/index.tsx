@@ -9,8 +9,8 @@ import {
   Download,
   ExternalLink,
 } from "lucide-react";
-import resume from "@/assets/resume.asset.json";
-import profilePhoto from "@/assets/profile.asset.json";
+const resumeUrl = "/files/Resume_Shishir_Dixit.pdf";
+const profilePhotoUrl = "/files/profile.jpeg";
 import {
   profile,
   projects,
@@ -114,7 +114,8 @@ function Hero() {
               See my work
             </a>
             <a
-              href={resume.url}
+              href={resumeUrl}
+              download="Resume_Shishir_Dixit.pdf"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-full border-[1.5px] border-ink bg-card px-6 py-3 font-semibold transition-transform hover:-translate-y-0.5"
@@ -127,7 +128,7 @@ function Hero() {
         <div className="card-pop overflow-hidden p-3">
           <div className="overflow-hidden rounded-2xl border-[1.5px] border-ink">
             <img
-              src={profilePhoto.url}
+              src={profilePhotoUrl}
               alt="Shishir Dixit working at his desk"
               className="aspect-[3/4] w-full object-cover"
               loading="eager"

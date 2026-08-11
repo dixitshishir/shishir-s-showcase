@@ -73,11 +73,15 @@ export const experience = [
     company: "TCS",
     period: "Jun 2024 – Present",
     points: [
-      "Developed and maintained 3 key modules for a US-based client using Ruby on Rails.",
-      "Built client requirements with Ruby, Rails, HTML, CSS, JavaScript and Rake automation tasks.",
-      "Designed and maintained RESTful APIs supporting web and mobile app functionality.",
+      "Developed and maintained 49 production REST APIs for the Xerox Learning Platform using Ruby and Ruby on Rails, powering Android and iOS applications serving 50,000+ users.",
+      "Designed and implemented 23 APIs for the Content Player module, delivering features such as content playback, thumbnail support and enhanced media management.",
+      "Built and enhanced 27 APIs for the Learn to Grow mobile application, supporting scalable backend services for Android and iOS.",
+      "Worked on cross-platform file and media handling for PDF, video, audio, image and document content, addressing differences in browser behaviour across Android and iOS/Safari.",
+      "Collaborated in an Agile team of 4 engineers with frontend and mobile developers to analyse requirements, develop APIs, test using Postman and BrowserStack, and deliver production-ready releases.",
+      "Led my team at the TCS AI Friday Hackathon, building and presenting a multi-RAG Agent — awarded winners.",
     ],
   },
+
   {
     role: "Software Engineer",
     company: "Meta16 Labs",

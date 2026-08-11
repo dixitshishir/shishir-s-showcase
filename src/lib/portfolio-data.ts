@@ -100,19 +100,13 @@ export const skills = [
   "TypeScript",
   "JavaScript",
   "Node.js",
-  "Python",
   "HTML",
   "CSS",
   "Tailwind CSS",
   "REST APIs",
-  "GraphQL",
   "PostgreSQL",
   "MySQL",
   "MongoDB",
-  "Redis",
-  "Sidekiq",
-  "RSpec",
-  "Flask",
   "RAG Systems",
   "Multi-Agent RAG",
   "LLM Integration",
@@ -120,7 +114,6 @@ export const skills = [
   "Prompt Engineering",
   "Artificial Intelligence",
   "Git & GitHub",
-  "Docker",
   "CI/CD",
   "Jenkins",
   "AWS",
@@ -130,6 +123,7 @@ export const skills = [
   "Vite",
   "Vercel",
 ];
+
 
 
 export const certifications = [

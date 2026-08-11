@@ -116,12 +116,11 @@ function Hero() {
             <a
               href={resumeUrl}
               download="Resume_Shishir_Dixit.pdf"
-              target="_blank"
-              rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-full border-[1.5px] border-ink bg-card px-6 py-3 font-semibold transition-transform hover:-translate-y-0.5"
             >
               <Download className="h-4 w-4" /> Download CV
             </a>
+
           </div>
         </div>
 

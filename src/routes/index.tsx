@@ -137,9 +137,11 @@ function Hero() {
           <div className="flex items-center justify-between gap-3 px-2 pb-1 pt-3">
             <div>
               <p className="font-display text-lg font-bold leading-tight">
-                Product Engineer
+                Systems Engineer
               </p>
-              <p className="text-sm text-muted-foreground">@ TCS · Bengaluru</p>
+              <p className="text-sm text-muted-foreground">
+                @ TCS · AI Compass · Bengaluru
+              </p>
             </div>
             <div className="flex gap-2">
               <SocialIcon href={profile.github} label="GitHub">

@@ -3,7 +3,7 @@ export const profile = {
   fullName: "Shishir Shivashankar Dixit",
   role: "Full Stack Developer — Angular & Python",
   tagline:
-    "Full-stack developer building reliable APIs and polished web experiences with Angular, Python and React, currently focused on digital learning platforms at TCS with a growing focus on AI and RAG systems.",
+    "Full-stack developer building reliable APIs and polished web experiences with Angular, Python and React. Promoted to Systems Engineer at TCS, now working as a Full Stack Developer on AI Compass, with a growing focus on AI and RAG systems.",
   location: "Bengaluru, India",
   email: "sdixit2301@gmail.com",
   phone: "+91 9739989373",
@@ -69,11 +69,20 @@ export const projects: Project[] = [
 
 export const experience = [
   {
+    role: "Systems Engineer — Full Stack Developer",
+    company: "TCS · AI Compass",
+    period: "2026 – Present",
+    points: [
+      "Promoted from Product Engineer to Systems Engineer and moved onto the AI Compass team as a Full Stack Developer.",
+      "Building and shipping full-stack features across the Angular frontend and Python backend.",
+    ],
+  },
+  {
     role: "Product Engineer",
     company: "TCS",
-    period: "Jun 2024 – Present",
+    period: "Jun 2024 – 2026",
     points: [
-      "Currently working as an API Developer for the Content Player module of TCS iON Digital Learning Exchange, designing scalable REST APIs and improving content delivery reliability.",
+      "Worked as an API Developer for the Content Player module of TCS iON Digital Learning Exchange, designing scalable REST APIs and improving content delivery reliability.",
       "Debug production issues and collaborate with product, QA, frontend and mobile teams to deliver dependable learning experiences.",
       "Developed and maintained 49 production REST APIs for the Xerox Learning Platform using Ruby and Ruby on Rails, powering Android and iOS applications serving 50,000+ users.",
       "Designed and implemented 23 APIs for the Content Player module, delivering features such as content playback, thumbnail support and enhanced media management.",

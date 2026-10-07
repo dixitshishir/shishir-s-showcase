@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Keep public portfolio content centralized in `src/lib/portfolio-data.ts` so profile, experience, projects, and credentials stay consistent.

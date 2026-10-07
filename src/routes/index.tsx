@@ -35,6 +35,7 @@ export const Route = createFileRoute("/")({
           "React, Ruby on Rails and AI projects by Shishir Dixit. Explore the work, experience and certifications.",
       },
       { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
     ],
   }),
   component: Portfolio,
@@ -87,7 +88,7 @@ function Hero() {
       <div className="grid items-center gap-10 md:grid-cols-[1.3fr_1fr]">
         <div>
           <span className="eyebrow inline-block rounded-full border-[1.5px] border-ink bg-primary px-4 py-1.5 font-bold text-primary-foreground">
-            Software Engineer
+            {profile.role}
           </span>
           <h1 className="relative mt-6 font-display text-6xl font-bold leading-[0.92] sm:text-7xl md:text-8xl">
             PORT
@@ -307,25 +308,63 @@ function Skills() {
       <div className="mt-14">
         <p className="eyebrow text-muted-foreground">certifications</p>
         <h3 className="mt-2 font-display text-3xl font-bold">Credentials</h3>
-        <div className="mt-6 grid gap-4">
+        <div className="mt-6 grid gap-5 md:grid-cols-2">
           {certifications.map((c) => (
-            <a
-              key={c.title}
-              href={c.url}
-              target="_blank"
-              rel="noreferrer"
-              className="card-pop flex items-center justify-between gap-4 p-5 hover:-translate-y-1"
-            >
-              <div>
-                <p className="font-display text-lg font-bold">{c.title}</p>
-                <p className="text-sm text-muted-foreground">{c.issuer}</p>
-              </div>
-              <ExternalLink className="h-5 w-5 shrink-0" />
-            </a>
+            <CertificationCard key={c.title} certification={c} />
           ))}
         </div>
       </div>
     </section>
+  );
+}
+
+function CertificationCard({
+  certification,
+}: {
+  certification: (typeof certifications)[number];
+}) {
+  const content = (
+    <>
+      <div className="flex items-start justify-between gap-4">
+        <div>
+          <p className="eyebrow text-muted-foreground">{certification.issuer}</p>
+          <p className="mt-2 font-display text-lg font-bold leading-snug">
+            {certification.title}
+          </p>
+        </div>
+        {certification.url ? (
+          <ExternalLink className="h-5 w-5 shrink-0" aria-hidden="true" />
+        ) : null}
+      </div>
+      <div className="mt-5 flex flex-wrap gap-x-4 gap-y-1 text-xs text-muted-foreground">
+        {certification.issued ? <span>Issued {certification.issued}</span> : null}
+        {certification.expires ? <span>Expires {certification.expires}</span> : null}
+      </div>
+      {certification.credentialId ? (
+        <p className="mt-2 break-all font-mono text-xs text-muted-foreground">
+          ID {certification.credentialId}
+        </p>
+      ) : null}
+      <p className="mt-4 text-sm font-semibold">
+        {certification.url ? "View credential" : "Credential listed on LinkedIn"}
+      </p>
+    </>
+  );
+
+  if (!certification.url) {
+    return <article className="card-pop p-5">{content}</article>;
+  }
+
+  return (
+    <a
+      href={certification.url}
+      target="_blank"
+      rel="noreferrer"
+      className="card-pop p-5 hover:-translate-y-1"
+      aria-label={`View ${certification.title} credential`}
+    >
+      {content}
+    </a>
   );
 }
 

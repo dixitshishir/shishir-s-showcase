@@ -1,9 +1,9 @@
 export const profile = {
   name: "Shishir Dixit",
   fullName: "Shishir Shivashankar Dixit",
-  role: "Product Engineer",
+  role: "Full Stack Developer — Angular & Python",
   tagline:
-    "Full-stack engineer building reliable Ruby on Rails APIs and polished React experiences, currently focused on digital learning platforms at TCS with a growing focus on AI and RAG systems.",
+    "Full-stack developer building reliable APIs and polished web experiences with Angular, Python and React, currently focused on digital learning platforms at TCS with a growing focus on AI and RAG systems.",
   location: "Bengaluru, India",
   email: "sdixit2301@gmail.com",
   phone: "+91 9739989373",
@@ -96,6 +96,8 @@ export const experience = [
 ];
 
 export const skills = [
+  "Angular",
+  "Python",
   "Ruby",
   "Ruby on Rails",
   "React.js",

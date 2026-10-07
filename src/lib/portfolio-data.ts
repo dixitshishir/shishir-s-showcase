@@ -1,9 +1,9 @@
 export const profile = {
   name: "Shishir Dixit",
   fullName: "Shishir Shivashankar Dixit",
-  role: "Software Engineer",
+  role: "Product Engineer",
   tagline:
-    "I build clean, useful web applications — from Ruby on Rails backends and RESTful APIs to polished React frontends, with a growing focus on AI and RAG systems.",
+    "Full-stack engineer building reliable Ruby on Rails APIs and polished React experiences, currently focused on digital learning platforms at TCS with a growing focus on AI and RAG systems.",
   location: "Bengaluru, India",
   email: "sdixit2301@gmail.com",
   phone: "+91 9739989373",
@@ -73,6 +73,8 @@ export const experience = [
     company: "TCS",
     period: "Jun 2024 – Present",
     points: [
+      "Currently working as an API Developer for the Content Player module of TCS iON Digital Learning Exchange, designing scalable REST APIs and improving content delivery reliability.",
+      "Debug production issues and collaborate with product, QA, frontend and mobile teams to deliver dependable learning experiences.",
       "Developed and maintained 49 production REST APIs for the Xerox Learning Platform using Ruby and Ruby on Rails, powering Android and iOS applications serving 50,000+ users.",
       "Designed and implemented 23 APIs for the Content Player module, delivering features such as content playback, thumbnail support and enhanced media management.",
       "Built and enhanced 27 APIs for the Learn to Grow mobile application, supporting scalable backend services for Android and iOS.",
@@ -128,8 +130,66 @@ export const skills = [
 
 export const certifications = [
   {
-    title: "LinkedIn Certifications",
-    issuer: "Open Shishir Dixit's LinkedIn profile to view credentials",
-    url: "https://www.linkedin.com/in/shishirdixit23/",
+    title: "Claude Certified Architect — Foundations",
+    issuer: "Anthropic",
+    issued: "Oct 2026",
+    expires: "Oct 2027",
+  },
+  {
+    title: "Claude Certified Developer — Foundations",
+    issuer: "Anthropic",
+    issued: "Aug 2026",
+    expires: "Aug 2027",
+    credentialId: "6a878a60-1f13-444c-bf41-6d646e0f71c5",
+  },
+  {
+    title: "AWS Certified Developer — Associate",
+    issuer: "Amazon Web Services (AWS)",
+    issued: "Oct 2025",
+    expires: "Oct 2028",
+  },
+  {
+    title: "Oracle Cloud Infrastructure 2025 Generative AI Professional",
+    issuer: "Oracle",
+    credentialId: "102594422OCI25GAIOCP",
+    url: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=5CAA184D3C307CB68E0B9A80306466BCD268196F486224BC7EC0D3493B6973C9",
+  },
+  {
+    title: "OCI Certified AI Foundations Associate",
+    issuer: "Oracle",
+    issued: "Sep 2025",
+    url: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=7C1D9783B5485477AC40827BCACF4265C710CD10ECC4688F8DBD45E809BD4192",
+  },
+  {
+    title: "DevTools Pro: Beginner to Expert with Chrome Developer Tools",
+    issuer: "Udemy",
+    issued: "Nov 2024",
+  },
+  {
+    title: "Ruby on Rails 7 Essential Training",
+    issuer: "LinkedIn Learning",
+    issued: "Sep 2024",
+    credentialId: "e43aba4991ae321f88135755eca39f4b74c1add96477ec593b457c3e60ed94e8",
+  },
+  {
+    title: "Introduction to Cloud Identity",
+    issuer: "Coursera",
+    issued: "Jun 2021",
+    credentialId: "20fcd636aae7e35d7aaa20643398c31f",
+    url: "https://coursera.org/share/20fcd636aae7e35d7aaa20643398c31f",
+  },
+  {
+    title: "Python for Everybody",
+    issuer: "Coursera",
+    issued: "Jun 2021",
+    credentialId: "QR2L2TU52GXZ",
+    url: "https://www.coursera.org/account/accomplishments/certificate/QR2L2TU52GXZ",
+  },
+  {
+    title: "Build a Face Recognition Application Using Python",
+    issuer: "GUVI Geek Networks, IITM Research Park",
+    issued: "May 2021",
+    credentialId: "1Z33qpH66Dg702572X",
+    url: "https://www.guvi.in/verify-certificate?id=1Z33qpH66Dg702572X",
   },
 ];
